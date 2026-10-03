@@ -1,3 +1,6 @@
+// Netflix Movie Finder
+// Input: genre number (1-5) and y/n to repeat
+// Output: a recommended movie and a short description
 #include <iostream>
 using namespace std;
 
