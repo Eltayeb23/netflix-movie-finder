@@ -20,8 +20,16 @@ int main() {
 
         int choice;
 
-        cout << "Enter your choice (1-5): ";
+               cout << "Enter your choice (1-5): ";
         cin >> choice;
+
+        // if the user types a letter instead of a number
+        while (cin.fail()) {
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cout << "Please enter a number: ";
+            cin >> choice;
+        }
 
         switch (choice) {
 
